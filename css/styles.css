@@ -5,6 +5,15 @@
 }
 
 
+.site-main {
+    border-right: none;
+    width: 100%;
+}
+#secondary {
+    display: none;
+}
+
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
@@ -91,8 +100,16 @@ li, a{
     justify-content: center;
     align-content: center;
     margin-top: 14vh;
+    border-style: hidden;
     
 }
+
+.body-container{
+    height: 69.25vh;
+    width: 100%;
+    
+}
+
 
 .search-box {
     margin: auto;
@@ -103,21 +120,32 @@ li, a{
     height: 40px;
     border-radius: 25px;
     border-style: solid;
+    margin-top: 30px;
 }
 
 
 .buttons-below{
     margin: auto;
     display: flex;
-    justify-content: center;
     margin: 20px 10px;
-    
+    border-radius: 5px;
+    height: 40px;
+    border-color: #efefef;
+    padding: 5px 50px;
+    justify-content: center;
+    flex-direction: row;
 } 
+
+.button{
+    margin: 20px;
+}
+
 
 .glogo{
     display: flex;
     margin: auto;
     margin-bottom: 10px;
+    margin-top: 30px;
     
 }
 
@@ -130,12 +158,13 @@ li, a{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: #c4c2c2;
+    background-color: #f2f2f2;
     border-width: 1px;
     width: minmax(auto, 100%);
     height: auto;
     align-content: center;
     position: relative;
+    align-self: baseline;
 }
     
 
@@ -143,7 +172,7 @@ li, a{
     display: flex;
     width: 100%vw;
     justify-content: space-between;
-    padding: 5px 25px;
+    padding: 3px 25px;
 }
 
 
@@ -167,7 +196,3 @@ li, a{
     margin: 10px 15px
 }
 
-.body-container{
-    height: 69.2vh;
-    width: 100%;
-}
